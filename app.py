@@ -23,7 +23,7 @@ def extractUrl():
         return "An error occured.."
 
 @app.route("/extract/json")
-def extractUrl():
+def extractUrlJson():
     try:
         url = request.args.get('url', default="https://github.blog/2019-03-29-leader-spotlight-erin-spiceland/")
         downloaded = trafilatura.fetch_url(url)
